@@ -1,5 +1,30 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
 nav {
     background:#031F1D;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-size: 48px;
 }
 
 .fundo-cinza {
