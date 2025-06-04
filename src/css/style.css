@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
+Add commentMore actions
 .fs-20 {
     font-size: 20px;
 }
@@ -56,12 +56,4 @@ h2 {
 footer {
   background-color: #031F1D;
   margin-bottom: 0;
-}
-
-body
-{
-    background-color: #5e803f;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
 }
