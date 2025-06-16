@@ -1,7 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-Add commentMore actions
 .fs-20 {
     font-size: 20px;
 }
@@ -22,10 +21,6 @@ nav {
     background:#031F1D;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #ffc107 !important;
-}
-
 h2 {
     font-family: 'VT323', monospace;
     font-size: 48px;
@@ -37,20 +32,6 @@ h2 {
 
 .fundo-verde {
     background-color:#031F1D;
-}
-
-.card {
-    border-radius: 0 !important;
-}
-
-.card-img-top {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
-    background-color: transparent !important;
-}
-
-.pading-32{
-    padding: 32px;
 }
 
 footer {
