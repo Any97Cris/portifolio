@@ -1,6 +1,29 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.titulo {
+    padding: 10px 0px;
+}
+
+.without-margin-bottom {
+    margin-bottom: 0px;
+}
+
+.margin-32 {
+    margin-left:32px;
+    margin-right:32px;
+}
+
+.margin-top-42 {
+    margin-top: 42px;
+}
+
+.navbar-20-fs {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
 Add commentMore actions
 .fs-20 {
     font-size: 20px;
@@ -24,6 +47,10 @@ nav {
 
 .navbar-nav .nav-link:hover {
     color: #ffc107 !important;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-bottom: #ffc107 2px solid;
 }
 
 h2 {
