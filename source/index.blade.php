@@ -38,18 +38,18 @@
         <div class="col-lg-6 order-1 order-lg-2">
           <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
             <div class="image-wrapper">
-              <img src="/assets/img/profile/profile-square-13.webp" alt="Creative Designer Portfolio" class="img-fluid main-image">
+              <img src="/assets/img/profile/cris_foto.jpg" alt="Creative Designer Portfolio" class="img-fluid main-image">
               <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
-                <i class="bi bi-palette"></i>
-                <span>UI/UX Design</span>
+                <i class="bi bi-code-square"></i>
+                <span>Laravel</span>
               </div>
               <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="700">
                 <i class="bi bi-code-square"></i>
                 <span>Web Development</span>
               </div>
               <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="800">
-                <i class="bi bi-camera"></i>
-                <span>Photography</span>
+                <i class="bi bi-code-square"></i>
+                <span>PHP</span>
               </div>
             </div>
           </div>

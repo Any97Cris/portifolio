@@ -3,7 +3,7 @@
 
   <div class="header-top">
     <div class="profile-img">
-      <img src="/assets/img/profile/profile-square-14.webp" alt="" class="img-fluid">
+      <img src="/assets/img/profile/cris_foto.jpg" alt="cris-foto" class="img-fluid">
     </div>
 
     <a href="/" class="logo d-flex align-items-center justify-content-center">
