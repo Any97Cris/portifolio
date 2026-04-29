@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   app:
     build:
       context: .
       dockerfile: .docker/Dockerfile
-    container_name: jigsaw-app
+    container_name: jigsaw-app-portifolio
     working_dir: /app
     volumes:
       - .:/app
@@ -20,7 +18,7 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: jigsaw-nginx
+    container_name: jigsaw-nginx-portifolio
     ports:
       - "80:80"
       - "443:443"
