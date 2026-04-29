@@ -3,24 +3,14 @@ set -e
 
 export PATH="$PATH:/app/vendor/bin"
 
-echo "🚀 Iniciando aplicação..."
+echo "Iniciando ambiente..."
 
-# Criar diretórios necessários
-mkdir -p storage logs cache 2>/dev/null || true
+composer install --no-interaction --prefer-dist
 
-# Instalar dependências PHP com Composer
-if [ -f composer.json ]; then
-    echo "📦 Instalando dependências PHP..."
-    composer install --no-interaction --prefer-dist
-fi
+npm install
 
-# Instalar dependências Node
-if [ -f package.json ]; then
-    echo "📦 Instalando dependências Node..."
-    npm install
-fi
+php vendor/bin/jigsaw build local
 
-echo "✅ Aplicação pronta!"
+echo "Ambiente pronto!"
 
-# Iniciar servidor de desenvolvimento Vite + Jigsaw watch
-exec npm run dev
+exec tail -f /dev/null
