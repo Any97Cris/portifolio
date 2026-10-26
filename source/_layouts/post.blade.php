@@ -17,8 +17,8 @@
       </div>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="/">Início</a></li>
-          <li><a href="/#posts">Posts</a></li>
+          <li><a href="{{ $page->baseUrl }}/">Início</a></li>
+          <li><a href="{{ $page->baseUrl }}/#posts">Posts</a></li>
           <li class="current">{{ $page->title }}</li>
         </ol>
       </nav>
@@ -45,7 +45,7 @@
 
           <nav class="post-nav">
             @if ($next = $page->getNext())
-              <a href="{{ $next->getPath() }}" class="post-nav-link">
+              <a href="{{ $next->getUrl() }}" class="post-nav-link">
                 <small><i class="bi bi-arrow-left"></i> Post anterior</small>
                 <span>{{ $next->title }}</span>
               </a>
@@ -54,7 +54,7 @@
             @endif
 
             @if ($previous = $page->getPrevious())
-              <a href="{{ $previous->getPath() }}" class="post-nav-link text-end">
+              <a href="{{ $previous->getUrl() }}" class="post-nav-link text-end">
                 <small>Próximo post <i class="bi bi-arrow-right"></i></small>
                 <span>{{ $previous->title }}</span>
               </a>

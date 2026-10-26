@@ -67,9 +67,9 @@
                     <span><i class="bi bi-clock"></i> {{ $post->readingTime() }}</span>
                   </div>
                 </div>
-                <h3><a href="{{ $post->getPath() }}">{{ $post->title }}</a></h3>
+                <h3><a href="{{ $post->getUrl() }}">{{ $post->title }}</a></h3>
                 <p>{{ $post->excerpt() }}</p>
-                <a href="{{ $post->getPath() }}" class="read-more">Continuar lendo <i class="bi bi-arrow-right"></i></a>
+                <a href="{{ $post->getUrl() }}" class="read-more">Continuar lendo <i class="bi bi-arrow-right"></i></a>
               </article>
             </div>
           @endforeach
@@ -92,7 +92,7 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row align-items-center gy-4">
         <div class="col-lg-4 text-center">
-          <img src="/assets/img/profile/cris_foto.jpg" alt="{{ $page->siteName }}" class="img-fluid about-photo">
+          <img src="{{ $page->baseUrl }}/assets/img/profile/cris_foto.jpg" alt="{{ $page->siteName }}" class="img-fluid about-photo">
         </div>
         <div class="col-lg-8">
           <h3>Oi, eu sou a {{ $page->siteName }} 👋</h3>

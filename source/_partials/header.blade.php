@@ -2,7 +2,7 @@
   <i class="header-toggle d-xl-none bi bi-list"></i>
 
   <div class="header-top">
-    <a href="/" class="logo d-flex align-items-center justify-content-center">
+    <a href="{{ $page->baseUrl }}/" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">{{ $page->siteName }}</h1>
     </a>
     <p class="site-tagline text-center">Tecnologia do dia a dia</p>
@@ -10,9 +10,9 @@
 
   <nav id="navmenu" class="navmenu">
     <ul>
-      <li><a href="/#hero"><i class="bi bi-house navicon"></i> Início</a></li>
-      <li><a href="/#posts"><i class="bi bi-journal-text navicon"></i> Posts</a></li>
-      <li><a href="/#sobre"><i class="bi bi-person navicon"></i> Sobre</a></li>
+      <li><a href="{{ $page->baseUrl }}/#hero"><i class="bi bi-house navicon"></i> Início</a></li>
+      <li><a href="{{ $page->baseUrl }}/#posts"><i class="bi bi-journal-text navicon"></i> Posts</a></li>
+      <li><a href="{{ $page->baseUrl }}/#sobre"><i class="bi bi-person navicon"></i> Sobre</a></li>
     </ul>
   </nav>
 
