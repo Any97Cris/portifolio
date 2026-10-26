@@ -3,7 +3,7 @@
     <h3 class="sitename">{{ $page->siteName }}</h3>
     <p>Anotações sobre tecnologia, escritas no meio do dia a dia.</p>
     <div class="social-links d-flex justify-content-center">
-      <a href="#"><i class="bi bi-github"></i></a>
+      <a href="https://github.com/Any97Cris" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
       <a href="#"><i class="bi bi-linkedin"></i></a>
     </div>
     <div class="container">
