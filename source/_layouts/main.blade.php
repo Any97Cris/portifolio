@@ -9,7 +9,8 @@
   <meta name="keywords" content="{{ $page->keywords ?? '' }}">
 
   <!-- Favicons -->
-  <link href="{{ $page->baseUrl }}/assets/img/favicon.png" rel="icon">
+  <link href="{{ $page->baseUrl }}/assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="{{ $page->baseUrl }}/assets/img/favicon.png" rel="icon" type="image/png" sizes="32x32">
   <link href="{{ $page->baseUrl }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
