@@ -5,7 +5,6 @@
     <div class="social-links d-flex justify-content-center">
       <a href="#"><i class="bi bi-github"></i></a>
       <a href="#"><i class="bi bi-linkedin"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
     </div>
     <div class="container">
       <div class="copyright">
