@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>{{ $page->title }}</title>
-  <meta name="description" content="{{ $page->description }}">
+  <title>{{ $page->isPost ? $page->title . ' | ' . $page->siteName : $page->title }}</title>
+  <meta name="description" content="{{ $page->isPost ? $page->excerpt() : $page->description }}">
   <meta name="keywords" content="{{ $page->keywords ?? '' }}">
 
   <!-- Favicons -->
@@ -26,6 +26,10 @@
 
   <!-- Main CSS File -->
   <link href="/assets/css/main.css" rel="stylesheet">
+  <link href="/assets/css/blog.css" rel="stylesheet">
+
+  <!-- Syntax highlight dos blocos de código -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" rel="stylesheet">
 
   @viteRefresh()
 </head>
@@ -60,6 +64,10 @@
 
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/blog.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 
 </body>
 

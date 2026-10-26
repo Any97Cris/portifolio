@@ -31,7 +31,7 @@ O container instala as dependências automaticamente e inicia o servidor Vite co
 
 ### Acessar o site
 
-- **Site**: http://localhost
+- **Site**: http://localhost:8080
 - **Vite dev server**: http://localhost:3000
 
 ### Parar os containers
@@ -48,6 +48,26 @@ docker compose logs -f
 
 ---
 
+## Escrever um post
+
+Crie um arquivo Markdown em `source/_posts/`. O nome do arquivo vira a URL (`/blog/nome-do-arquivo`):
+
+```markdown
+---
+title: Título do post
+date: 2026-10-25
+category: Docker
+tags: [docker, linux]
+description: Resumo curto que aparece no card da página inicial.
+---
+
+Conteúdo do post em **Markdown**.
+```
+
+Os posts são ordenados do mais recente para o mais antigo, e as categorias viram filtros na página inicial automaticamente.
+
+---
+
 ## Editar conteúdo
 
 Edite os arquivos em `source/`. As mudanças são refletidas automaticamente no browser.
@@ -58,8 +78,11 @@ source/
 │   ├── css/main.css       # estilos (Tailwind)
 │   └── js/main.js         # javascript
 ├── _layouts/
-│   └── main.blade.php     # layout principal
-└── index.blade.php        # página inicial
+│   ├── main.blade.php     # layout principal
+│   └── post.blade.php     # layout de cada post
+├── _posts/                # posts do blog em Markdown
+├── assets/css/blog.css    # estilos do blog
+└── index.blade.php        # página inicial (lista de posts)
 ```
 
 ---
